@@ -1,3 +1,3 @@
 # 1 How can we ensure that each card is received once and only once?
 
-
+We can assign a unique id for each card that is used to track it through the exchange process. Each node can record the id of each card they recevied and determine if they have received it before so that duplicate message can be blocked by each node. Also, we can select a intermediate node that all card need to send through this node before send it to the recipiants so that this node can record the card's id and block the card if it duplicate card. Beside, all unqiue card that passed through the intermediate node will be assigned to a new same id, so the recipant can also identify which card is belongs to which message.  
